@@ -376,7 +376,7 @@ export function AiVideos() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
           >
             {VIDEO_PROJECTS.map((project) => (
               <motion.div key={project.id} variants={fadeInUp}>
@@ -402,8 +402,8 @@ export function AiVideos() {
                         />
                       )}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                        <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-md">
-                          <svg width="16" height="18" viewBox="0 0 20 22" fill="none" className="ml-0.5">
+                        <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+                          <svg width="18" height="20" viewBox="0 0 20 22" fill="none" className="ml-0.5">
                             <path
                               d="M18.5 9.268a2 2 0 010 3.464L3.5 21.124A2 2 0 010 19.392V2.608A2 2 0 013.5.876L18.5 9.268z"
                               fill="var(--ltx-black)"
@@ -413,14 +413,14 @@ export function AiVideos() {
                       </div>
                     </div>
 
-                    <CardContent className="p-4 flex flex-col flex-1">
-                      <h3 className="font-[family-name:var(--font-display)] font-semibold text-ltx-black leading-snug">
+                    <CardContent className="p-5 flex flex-col flex-1">
+                      <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold text-ltx-black leading-snug">
                         {project.title}
                       </h3>
-                      <p className="text-sm text-ltx-muted mt-1.5 leading-snug flex-1">
+                      <p className="text-sm text-ltx-muted mt-2 leading-relaxed flex-1">
                         {project.description}
                       </p>
-                      <div className="mt-3 flex items-center justify-between">
+                      <div className="mt-4 flex items-center justify-between">
                         <span className="inline-flex items-center gap-1.5 text-xs font-medium text-ltx-studio">
                           View details
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
